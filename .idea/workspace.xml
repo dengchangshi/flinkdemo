@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="85d8d76f-fee8-42c6-a4d6-f12cfee0f0dd" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view />
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\maven\repository" />
+        <option name="mavenHome" value="D:/maven/apache-maven-3.6.3" />
+        <option name="userSettingsFile" value="D:\maven\apache-maven-3.6.3\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="vmOptionsForImporter" value="-Xmx768m" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="jreName" value="1.8" />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1hw6kXmwDcECIkSQwNIDP3ieEjh" />
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../kafkatotbase/kafka2tbase" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.build" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.hy.flinktest.kafka2mysql" />
+      <recent name="com.hy.mysql2mysql" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.MainTest.testFromkafka">
+    <configuration name="KafkaRickSourceFunction" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.hy.flinktest.kafka2mysql.KafkaRickSourceFunction" />
+      <module name="flinkdemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hy.flinktest.kafka2mysql.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WritedatatoKafka" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.hy.flinktest.kafka2mysql.WritedatatoKafka" />
+      <module name="flinkdemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hy.flinktest.kafka2mysql.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainTest.testFromkafka" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="flinkdemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hy.flinktest.kafka2mysql.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.hy.flinktest.kafka2mysql" />
+      <option name="MAIN_CLASS_NAME" value="com.hy.flinktest.kafka2mysql.MainTest" />
+      <option name="METHOD_NAME" value="testFromkafka" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainTest.testMysqltoMysqlbyClass" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="flinkdemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hy.flinktest.mysql2mysql.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.hy.flinktest.mysql2mysql" />
+      <option name="MAIN_CLASS_NAME" value="com.hy.flinktest.mysql2mysql.MainTest" />
+      <option name="METHOD_NAME" value="testMysqltoMysqlbyClass" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainTest.testMysqltoMysqlbyListClass" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="flinkdemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hy.flinktest.kafka2mysql.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.hy.flinktest.kafka2mysql" />
+      <option name="MAIN_CLASS_NAME" value="com.hy.flinktest.kafka2mysql.MainTest" />
+      <option name="METHOD_NAME" value="testMysqltoMysqlbyListClass" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.MainTest.testFromkafka" />
+        <item itemvalue="Application.WritedatatoKafka" />
+        <item itemvalue="Application.KafkaRickSourceFunction" />
+        <item itemvalue="JUnit.MainTest.testMysqltoMysqlbyListClass" />
+        <item itemvalue="JUnit.MainTest.testMysqltoMysqlbyClass" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="85d8d76f-fee8-42c6-a4d6-f12cfee0f0dd" name="Default Changelist" comment="" />
+      <created>1600832842162</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1600832842162</updated>
+      <workItem from="1600832845068" duration="15485000" />
+      <workItem from="1600909955398" duration="426000" />
+      <workItem from="1600910403564" duration="124000" />
+      <workItem from="1600910532259" duration="31716000" />
+      <workItem from="1600995882346" duration="1317000" />
+      <workItem from="1600999935458" duration="10385000" />
+      <workItem from="1601016567434" duration="849000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hy/flinktest/mysql2mysql/WriteMysqlSinkTuple.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hy/flinktest/mysql2mysql/WriteMysqlSinkTuple.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hy/flinktest/mysql2mysql/WriteMysqlSinkClass.java</url>
+          <line>51</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hy/flinktest/mysql2mysql/WriteMysqlSinkClass.java</url>
+          <line>55</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hy/flinktest/WordCountJava.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
