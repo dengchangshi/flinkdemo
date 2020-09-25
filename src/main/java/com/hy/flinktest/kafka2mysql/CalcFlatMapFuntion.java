@@ -15,7 +15,7 @@ import java.nio.file.attribute.UserDefinedFileAttributeView;
  */
 
 //FlatMapFunction<User,User> 第一个User 是入参，第二个User是出参，就是要返回的类型
-public class CalcFlatFuntion implements FlatMapFunction<User,User> {
+public class CalcFlatMapFuntion implements FlatMapFunction<User,User> {
     @Override
     public void flatMap(User user, Collector collector) throws Exception {
         User user1 =  new User();

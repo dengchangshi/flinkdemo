@@ -60,7 +60,7 @@ public class MainTest {
         DataStreamSource<String> dataStreamSource = env.addSource(new KafkaRickSourceFunction());
 
         //从kafka里读取数据，转换成User对象
-        DataStream<User> dataStream = dataStreamSource.map(lines -> JSONObject.parseObject(lines, User.class)).flatMap(new CalcFlatFuntion());
+        DataStream<User> dataStream = dataStreamSource.map(lines -> JSONObject.parseObject(lines, User.class)).flatMap(new CalcFlatMapFuntion());
         //收集5秒钟的总数
         dataStream.timeWindowAll(Time.seconds(5L)).
                 apply(new AllWindowFunction<User, List<User>, TimeWindow>() {
