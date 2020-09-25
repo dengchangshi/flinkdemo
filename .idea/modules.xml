@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/flinkdemo.iml" filepath="$PROJECT_DIR$/flinkdemo.iml" group="flinkdemo" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/flinkdemo.iml" filepath="$PROJECT_DIR$/.idea/flinkdemo.iml" />
     </modules>
   </component>
 </project>
