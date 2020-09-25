@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="85d8d76f-fee8-42c6-a4d6-f12cfee0f0dd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/flinkdemo.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/hy/flinktest/kafka2mysql/CalcFlatFuntion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/flinkdemo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/flinkdemo.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_esotericsoftware_kryo_kryo_2_24_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_esotericsoftware_kryo_kryo_2_24_0.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hy/flinktest/kafka2mysql/MainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hy/flinktest/kafka2mysql/MainTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -67,7 +65,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
@@ -76,6 +74,9 @@
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.hy.flinktest.kafka2mysql" />
       <recent name="com.hy.mysql2mysql" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.hy.flinktest.kafka2mysql" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -193,7 +194,8 @@
       <workItem from="1600999935458" duration="10385000" />
       <workItem from="1601016567434" duration="1839000" />
       <workItem from="1601018546401" duration="15000" />
-      <workItem from="1601018640835" duration="313000" />
+      <workItem from="1601018640835" duration="913000" />
+      <workItem from="1601020781926" duration="3665000" />
     </task>
     <servers />
   </component>
@@ -205,7 +207,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
