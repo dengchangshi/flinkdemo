@@ -4,7 +4,11 @@ package com.hy.flinktest.kafka2mysql;
 import com.hy.flinktest.entity.User;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.flink.api.java.tuple.Tuple2;
+import org.apache.flink.runtime.state.FunctionInitializationContext;
+import org.apache.flink.runtime.state.FunctionSnapshotContext;
+import org.apache.flink.streaming.api.checkpoint.CheckpointedFunction;
 import org.apache.flink.streaming.api.functions.source.RichSourceFunction;
+import org.apache.kafka.clients.consumer.ConsumerConfig;
 import org.apache.kafka.clients.consumer.ConsumerRecord;
 import org.apache.kafka.clients.consumer.ConsumerRecords;
 import org.apache.kafka.clients.consumer.KafkaConsumer;
@@ -27,12 +31,18 @@ import java.util.Properties;
  * @Date: 2020/9/24 16:04
  */
 @Slf4j
-public class KafkaRickSourceFunction extends RichSourceFunction<String>{
+public class KafkaRickSourceFunction extends RichSourceFunction<String> implements CheckpointedFunction {
     //kafka
     private static Properties prop = new Properties();
     private boolean running = true;
 
 
+    /*
+    * 一，latest和earliest区别
+    1，earliest 当各分区下有已提交的offset时，从提交的offset开始消费；无提交的offset时，从头开始消费
+    2，latest 当各分区下有已提交的offset时，从提交的offset开始消费；无提交的offset时，消费新产生的该分区下的数据
+    提交过offset，latest和earliest没有区别，但是在没有提交offset情况下，用latest直接会导致无法读取旧数据。
+    * */
     private static Integer partition = WritedatatoKafka.partition;
     static {
         prop.put("bootstrap.servers",WritedatatoKafka.BROKER_LIST);
@@ -40,9 +50,11 @@ public class KafkaRickSourceFunction extends RichSourceFunction<String>{
         prop.put("group.id",WritedatatoKafka.TOPIC_USER);
         prop.put("key.deserializer",WritedatatoKafka.CONST_DESERIALIZER);
         prop.put("value.deserializer",WritedatatoKafka.CONST_DESERIALIZER);
-        prop.put("auto.offset.reset","latest");
+        prop.put("auto.offset.reset","latest");//earliest
         prop.put("max.poll.records", "500");
         prop.put("auto.commit.interval.ms", "1000");
+        //换成下面这种写法，比较容易看
+        //prop.setProperty(ConsumerConfig.ENABLE_AUTO_COMMIT_CONFIG,"false");
     }
 
     @Override
@@ -116,4 +128,13 @@ public class KafkaRickSourceFunction extends RichSourceFunction<String>{
         running = false;
     }
 
+    @Override
+    public void snapshotState(FunctionSnapshotContext functionSnapshotContext) throws Exception {
+
+    }
+
+    @Override
+    public void initializeState(FunctionInitializationContext functionInitializationContext) throws Exception {
+
+    }
 }
