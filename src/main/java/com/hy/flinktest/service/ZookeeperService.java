@@ -19,7 +19,7 @@ public class ZookeeperService implements Watcher {
 
     private ZooKeeper zk;
 
-    public static final String etlAddTaskPath = "/etlAddTaskPath"; //zk节点必须"/"开头
+    public static final String zkoffsetPath = "/zkoffsetPath"; //zk节点必须"/"开头
 
     private static CountDownLatch countDownLatch = new CountDownLatch(1);
 
@@ -73,14 +73,14 @@ public class ZookeeperService implements Watcher {
      */
     public boolean existSameTask(String topicName, int partitionIndex)
             throws KeeperException, InterruptedException {
-        String zkTaskPath = etlAddTaskPath + "/" + topicName + "/" + partitionIndex;
+        String zkTaskPath = zkoffsetPath + "/" + topicName + "/" + partitionIndex;
 
         //如果父节点不存在则创建父节点
-        String parentPath = etlAddTaskPath;
+        String parentPath = zkoffsetPath;
         if (!existNode(parentPath)) {
             zk.create(parentPath, null, ZooDefs.Ids.OPEN_ACL_UNSAFE, CreateMode.PERSISTENT);
         }
-        String subPath = etlAddTaskPath + "/" + topicName;
+        String subPath = zkoffsetPath + "/" + topicName;
         if (!existNode(subPath)) {
             zk.create(subPath, null, ZooDefs.Ids.OPEN_ACL_UNSAFE, CreateMode.PERSISTENT);
         }
@@ -115,12 +115,12 @@ public class ZookeeperService implements Watcher {
      */
     public void createOffsetNodeIfNotExist(String topicName, int partitionIndex)
             throws KeeperException, InterruptedException {
-        createNodeIfNotExist(etlAddTaskPath, CreateMode.PERSISTENT);
+        createNodeIfNotExist(zkoffsetPath, CreateMode.PERSISTENT);
         createNodeIfNotExist(
-                etlAddTaskPath + "/" + topicName,
+                zkoffsetPath + "/" + topicName,
                 CreateMode.PERSISTENT);
         createNodeIfNotExist(
-                etlAddTaskPath + "/" + topicName + "/" + partitionIndex,
+                zkoffsetPath + "/" + topicName + "/" + partitionIndex,
                 CreateMode.PERSISTENT);
     }
 

@@ -74,7 +74,7 @@ public class KafkaRickSourceFunction extends RichSourceFunction<String> implemen
         TopicPartition topicPartition = new TopicPartition(WritedatatoKafka.TOPIC_USER,partition);
 
         long offset = 0;
-        String zkTopicPath = zkService.etlAddTaskPath+ "/" + topicPartition.topic() + "/" + topicPartition.partition();
+        String zkTopicPath = zkService.zkoffsetPath+ "/" + topicPartition.topic() + "/" + topicPartition.partition();
         try {
             zkService.createOffsetNodeIfNotExist(topicPartition.topic(), topicPartition.partition());
             offset = zkService.getOffset(zkTopicPath);//获取偏移量
